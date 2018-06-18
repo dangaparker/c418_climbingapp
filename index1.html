@@ -1,0 +1,105 @@
+<!-- landing page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="index1.css">
+    <title>climbing app</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            font-family: "Raleway", sans-serif;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+            url("landing_page_bg.jpg");
+            background-position: center center;
+            background-size: cover;
+
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .container form {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            width: 80%;
+            align-items: center;
+        }
+
+        .container h1.title {
+            color: white;
+            font-size: 3em;
+            text-transform: uppercase;
+        }
+
+        .container input[name="search"] {
+            outline: none;
+            width: 100%;
+            font-size: 1.6em;
+            font-weight: lighter;
+            border-radius: 0.1em;
+            padding: 0.3em 0;
+            box-sizing: border-box;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid white;
+            color: white;
+        }
+
+        .container input[name="search"]::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white;
+        }
+
+        .container p {
+            color: white;
+            align-self: flex-start;
+            text-transform: capitalize;
+            margin-bottom: 0.8em;
+            font-weight: lighter;
+        }
+
+        .container button {
+            font-size: 1.2em;
+            text-transform: uppercase;
+            background-color: transparent;
+            color: black;
+            background-color: yellow;
+            padding: 0.4em 0.8em;
+            margin-bottom: 0.8em;
+            width: 100%;
+            border: none;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">rock climb</h1>
+        <form>
+            <input type="text" name="search" placeholder="Enter city or zipcode">
+            <p>search by</p>
+            <button> routes</button>
+            <button> campgrounds</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!-- Photo by Christoph Deinet on Unsplash -->
